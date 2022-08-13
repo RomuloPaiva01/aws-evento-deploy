@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/romuloamaral/Documents/projects/evento_deploy_aws/code/cicd/mlruns/1/3d523badbceb426ebe9c4d503143c21c/artifacts
+end_time: 1660379571646
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 3d523badbceb426ebe9c4d503143c21c
+run_uuid: 3d523badbceb426ebe9c4d503143c21c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1660379571643
+status: 3
+tags: []
+user_id: romuloamaral

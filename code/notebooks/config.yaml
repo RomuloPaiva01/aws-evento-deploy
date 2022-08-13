@@ -1,0 +1,20 @@
+MLFLOW:
+    MODEL_URI: mlruns/1/43358b52bdf84e9f9432d4c6407a558f/artifacts/random-forest-model/ # location of the trained model
+    MODE: create # can be create or update
+
+AWS_BASIC_CONFIG:
+    REGION: eu-west-1
+    AWS_ID: 276848361358 # account number
+    AWS_ACCESS_KEY_ID: 'AKIAUA5LSX6HHQNBQWMJ'
+    AWS_SECRET_ACCESS_KEY: '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'
+
+SAGEMAKER_CONFIG:
+    ROLE: arn:aws:iam::276848361358:role/service-role/AmazonSageMaker-ExecutionRole-20211230T163761 #sagemaker execution role
+    APP_NAME: iris-demo # name of the application
+    TAG_ID: 1.24.0 # tag of the image
+    INSTANCE_MODEL: ml.m5.large # instance type for the model endpoint 
+
+IRIS_DATA:
+    BUCKET: iris-demo-s3
+    KEY_TRAIN: train.csv
+    KEY_TEST: test.csv
