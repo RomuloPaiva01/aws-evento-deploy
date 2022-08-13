@@ -27,7 +27,7 @@ phases:
     on-failure: ABORT
     commands:
       #- python -m unittest discover tests # inside unittest it should create the endpoint locally and test it
-      - (cd mlruns/$ID_EXP/$RUN_ID/artifacts/$MODEL_TYPE/ ; mlflow sagemaker build-and-push-container --build --push) # push image to ecr
+      #- (cd mlruns/$ID_EXP/$RUN_ID/artifacts/$MODEL_TYPE/ ; mlflow sagemaker build-and-push-container --build --push) # push image to ecr
   post_build:
     on-failure: ABORT
     commands:
