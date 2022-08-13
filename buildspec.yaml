@@ -12,7 +12,7 @@ env:
 phases:
   install:
     runtime-versions:
-      python: 3.9
+      python: 3.10
     commands:
       - pip install pandas boto3 pyyaml sklearn sagemaker mlflow==1.24.0
       - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://0.0.0.0:2375 --storage-driver=overlay& # initialize docker deamon
