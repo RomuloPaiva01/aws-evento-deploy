@@ -1,7 +1,7 @@
 import mlflow.sagemaker as mfs
 import yaml
 import boto3
-import subprocess
+import os
 
 # reading config file
 def read_yaml(file_path):
@@ -17,8 +17,11 @@ except Exception as e:
 REGION = config['AWS_BASIC_CONFIG']['REGION']
 AWS_ID = config['AWS_BASIC_CONFIG']['AWS_ID']
 
-ACCESS_KEY = config['AWS_BASIC_CONFIG']['AWS_ACCESS_KEY_ID']
-SECRET_ACCESS_KEY = config['AWS_BASIC_CONFIG']['AWS_SECRET_ACCESS_KEY']
+#ACCESS_KEY = config['AWS_BASIC_CONFIG']['AWS_ACCESS_KEY_ID']
+#SECRET_ACCESS_KEY = config['AWS_BASIC_CONFIG']['AWS_SECRET_ACCESS_KEY']
+
+ACCESS_KEY = os.environ['AWS_ACCESS_KEY_ID']
+SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
 
 BUCKET = config['S3']['BUCKET']
 ECR_REPO = config['ECR']['REPO']
