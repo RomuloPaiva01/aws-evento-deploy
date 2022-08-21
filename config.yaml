@@ -5,6 +5,8 @@ MLFLOW:
 AWS_BASIC_CONFIG:
     REGION: eu-west-1
     AWS_ID: 276848361358 # account number
+    AWS_ACCESS_KEY_ID: 'AKIAUA5LSX6HHQNBQWMJ'
+    AWS_SECRET_ACCESS_KEY: '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'
 
 SAGEMAKER_CONFIG:
     ROLE: arn:aws:iam::276848361358:role/service-role/AmazonSageMaker-ExecutionRole-20211230T163761 #sagemaker execution role
