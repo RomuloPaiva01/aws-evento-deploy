@@ -63,7 +63,8 @@ try:
             mode=MLFLOW_MODE,
             execution_role_arn=ROLE,
             image_url=IMAGE_URL,
-            instance_type=INSTANCE_MODEL)
+            instance_type=INSTANCE_MODEL,
+            bucket=BUCKET)
 except Exception as e:
     print(e)
     print('Model was not deployed on AWS')
