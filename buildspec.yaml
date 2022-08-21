@@ -14,7 +14,7 @@ phases:
     runtime-versions:
       python: 3.10
     commands:
-      - pip install pandas boto3 pyyaml sklearn sagemaker mlflow==1.24.0
+      - pip install pandas boto3 pyyaml sklearn sagemaker mlflow==1.28.0
       - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://0.0.0.0:2375 --storage-driver=overlay& # initialize docker deamon
       - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"
   pre_build:

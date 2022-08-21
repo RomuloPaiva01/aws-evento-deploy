@@ -11,7 +11,7 @@ AWS_BASIC_CONFIG:
 SAGEMAKER_CONFIG:
     ROLE: arn:aws:iam::276848361358:role/service-role/AmazonSageMaker-ExecutionRole-20211230T163761 #sagemaker execution role
     APP_NAME: iris-demo # name of the application
-    TAG_ID: 1.24.0 # tag of the image
+    TAG_ID: 1.28.0 # tag of the image
     INSTANCE_MODEL: ml.m5.large # instance type for the model endpoint 
 
 S3:
